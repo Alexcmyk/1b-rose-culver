@@ -8,7 +8,7 @@ const next = function() {
 };
 
 const updateSection = function() {
-  outputTag.innerHTML = "this is a test";
+  outputTag.innerHTML = pageNumber;
 };
 
 
