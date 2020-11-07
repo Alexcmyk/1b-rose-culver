@@ -175,8 +175,8 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
   width: 60%;
+  text-align: center;
 }
 
 section div.circle {
@@ -189,15 +189,16 @@ section div.circle {
 
 footer {
   position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   bottom: 0;
   left: 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 30px;
 }
 
 footer img {
   margin: 0 10px;
+  cursor: pointer;
 }
