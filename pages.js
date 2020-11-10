@@ -33,6 +33,10 @@ const outputTag = document.querySelector("h2");
 const circleTag = document.querySelector("section div.circle");
 const bodyTag = document.querySelector("body");
 
+// Hidden btns
+const leftButton = document.querySelector("div.left-btn");
+const rightButton = document.querySelector("div.right-btn");
+
 // Next logic
 const next = () => {
   pageNumber += 1;
@@ -78,6 +82,16 @@ previousTag.addEventListener("click", () => {
 
 randomTag.addEventListener("click", () => {
   random();
+});
+
+// Hidden button logic
+
+leftButton.addEventListener("click", () => {
+  previous();
+});
+
+rightButton.addEventListener("click", () => {
+  next();
 });
 
 // Keyboard logic

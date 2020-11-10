@@ -189,6 +189,14 @@ section div.circle {
   transition: background-color 300ms ease-in;
 }
 
+section a {
+  color: rgb(59, 59, 59);
+}
+
+section a:hover {
+  color: #3e78ed;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -202,5 +210,25 @@ footer {
 
 footer img {
   margin: 0 10px;
+  cursor: pointer;
+}
+
+/* Fixed page buttons */
+
+div.left-btn {
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+div.right-btn {
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
   cursor: pointer;
 }
