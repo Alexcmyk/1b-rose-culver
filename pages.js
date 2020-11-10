@@ -5,7 +5,7 @@ const outputTag = document.querySelector("h2");
 
 
 
-const next = function() {
+const next = () => {
   pageNumber += 1;
 
   if (pageNumber > 10) {
@@ -15,7 +15,7 @@ const next = function() {
   updateSection();
 };
 
-const previous = function () {
+const previous = () => {
   pageNumber -= 1;
 
   if (pageNumber < 1) {
@@ -26,17 +26,16 @@ const previous = function () {
 
 
 
-const updateSection = function() {
+const updateSection = () => {
   outputTag.innerHTML = pageNumber;
 };
 
 
-
 // Event listener for functions
-nextTag.addEventListener("click", function () {
+nextTag.addEventListener("click", () => {
   next();
 });
 
-previousTag.addEventListener("click", function () {
+previousTag.addEventListener("click", () => {
   previous();
 });
